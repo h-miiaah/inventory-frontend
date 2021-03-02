@@ -1,4 +1,6 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {fetchBoxes} from './actions/fetchBoxes';
 
 class App extends React.Component {
 
@@ -17,4 +19,10 @@ class App extends React.Component {
   }
 }
 
-export default App;
+// const mapStateToProps = (state) => {
+//   return (
+//     boxes: state.boxes
+//   )
+// }
+
+export default connect(null, {fetchBoxes}) (App);
