@@ -1,5 +1,8 @@
-export default fetchBoxes () {
-    fetch('http://localhost:3001/api/v1/boxes')
-    .then(response => response.json())
-    .then(data => console.log(data))
+import { bindActionCreators } from "redux"
+
+export default fetchBoxes (action) {
+    // fetch('http://localhost:3001/api/v1/boxes')
+    // .then(response => response.json())
+    // .then(data => console.log(data))
+    return action;
 }
