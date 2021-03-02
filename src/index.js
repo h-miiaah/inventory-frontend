@@ -11,6 +11,8 @@ import App from './App';
 // set up the store ("import {createStore} from 'redux'")
 
 ReactDOM.render(
-    <App />,
+  <Provider >
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
