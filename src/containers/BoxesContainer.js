@@ -1,10 +1,13 @@
 import React from 'react';
+import Boxes from '../components/Boxes';
+import BoxInput from '../components/BoxInput';
 
 class BoxesContainer extends React.Component {
     render() {
         return(
             <div>
-                BoxesContainer
+                <BoxInput />
+                <Boxes />
             </div>
         )
     }
