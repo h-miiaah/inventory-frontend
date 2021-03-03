@@ -29,4 +29,4 @@ class App extends React.Component {
 // }
 
 // export default connect(null, {fetchBoxes}) (App);
-export default connect() (App);
+export default App;
