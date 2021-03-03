@@ -7,7 +7,7 @@ import BoxInput from '../components/BoxInput';
 class BoxesContainer extends React.Component {
 
     componentDidMount(){
-        // this.props.fetchBoxes();
+        this.props.fetchBoxes();
     }
 
     render() {
