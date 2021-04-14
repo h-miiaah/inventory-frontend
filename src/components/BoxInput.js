@@ -4,15 +4,23 @@ class BoxInput extends React.Component {
 
     state = {name: '', amount: ''}
 
+    handleChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
     render(){
         return(
             <div>
                 <form>
                     <label>Box Name </label>
-                   <input type='text' placeholder='Name'></input>
+                   <input type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleChange}></input>
                    <br></br>
                    <label>Box Amount </label>
-                   <input type='text' placeholder='Amount'></input>
+                   <input type='text' placeholder='Amount' value={this.state.amount} name="amount" onChange={this.handleChange}></input>
+                   <br></br>
+                   <input type="submit"></input>
                 </form>
             </div>
         )
