@@ -4,7 +4,13 @@ class BoxInput extends React.Component {
     render(){
         return(
             <div>
-                BoxInput
+                <form>
+                    <label>Box Name </label>
+                   <input type='text' placeholder='Box Name'></input>
+                   <br></br>
+                   <label>Box Amount </label>
+                   <input type='text' placeholder='Box Amount'></input>
+                </form>
             </div>
         )
     }
