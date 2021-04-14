@@ -1,4 +1,6 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {addBox} from '../actions/addBox';
 
 class BoxInput extends React.Component {
 
@@ -10,8 +12,9 @@ class BoxInput extends React.Component {
         })
     }
 
-    handleSubmit = () => {
-        debugger;
+    handleSubmit = (event) => {
+        event.preventDefault();
+        this.props.addBox(this.state);
     }
 
     render(){
@@ -31,4 +34,4 @@ class BoxInput extends React.Component {
     }
 }
 
-export default BoxInput;
+export default connect(null, {addBox})(BoxInput);
