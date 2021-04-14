@@ -14,6 +14,8 @@ class BoxesContainer extends React.Component {
         return(
             <div>
                 <BoxInput />
+                <br></br>
+                <br></br>
                 <Boxes boxes={this.props.boxes} />
             </div>
         )
