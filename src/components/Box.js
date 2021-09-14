@@ -3,9 +3,13 @@ import React from 'react'
 
 const Box = (props) => {
     console.log(props)
+
+    let box = props.boxes[props.match.params.id - 1]
+    console.log(box)
+
     return (
         <li>
-            {props.box.name} - {props.box.amount}
+            {box ? box.name : null} - {box ? box.amount : null}
         </li>
     )
 }
