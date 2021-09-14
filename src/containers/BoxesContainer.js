@@ -15,9 +15,7 @@ class BoxesContainer extends React.Component {
         return(
             <div>
                 <Route path='/boxes/new' component={BoxInput}/>
-                <br></br>
-                <br></br>
-                <Boxes boxes={this.props.boxes} />
+                <Route path='/boxes' render={() => <Boxes boxes={this.props.boxes}/> } />
             </div>
         )
     }
