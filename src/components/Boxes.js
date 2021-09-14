@@ -4,7 +4,7 @@ import Box from './Box'
 const Boxes = (props) => {
     return(
         <div>
-            {props.boxes.map(box => <li key={box.id}><Box box={box}/> </li>)}
+            {props.boxes.map(box => <div key={box.id}><Box box={box}/> </div>)}
         </div>
     )
 }
