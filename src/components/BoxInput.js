@@ -15,6 +15,7 @@ class BoxInput extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         this.props.addBox(this.state);
+        this.setState({name: '', amount: ''});
     }
 
     render(){
