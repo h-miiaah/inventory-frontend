@@ -4,9 +4,9 @@ import React from 'react'
 const Box = (props) => {
     console.log(props)
     return (
-        <div>
+        <li>
             {props.box.name} - {props.box.amount}
-        </div>
+        </li>
     )
 }
 
