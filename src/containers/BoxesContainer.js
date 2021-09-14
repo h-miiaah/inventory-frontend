@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {Route} from 'react-router-dom';
 import {fetchBoxes} from '../actions/fetchBoxes';
 import Boxes from '../components/Boxes';
 import BoxInput from '../components/BoxInput';
@@ -13,6 +14,7 @@ class BoxesContainer extends React.Component {
     render() {
         return(
             <div>
+                <Route path='/boxes/new' component={BoxInput}/>
                 <BoxInput />
                 <br></br>
                 <br></br>
