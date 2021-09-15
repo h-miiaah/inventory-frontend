@@ -9,10 +9,9 @@ const Box = (props) => {
     console.log(box)
 
     return (
-        <li>
-            {/* {box ? null : <Redirect to='/boxes'/>} */}
+        <h2>
             {box ? box.name : null} - {box ? box.amount : null}
-        </li>
+        </h2>
     )
 }
 
