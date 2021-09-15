@@ -2,6 +2,8 @@
 import React from 'react'
 import {Redirect} from 'react-router-dom'
 
+import ItemsContainer from '../containers/ItemsContainer'
+
 const Box = (props) => {
     // console.log(props)
 
@@ -9,9 +11,13 @@ const Box = (props) => {
     console.log(box)
 
     return (
-        <h2>
-            {box ? box.name : null} - {box ? box.amount : null}
-        </h2>
+        <div>
+            <h2>
+                {box ? box.name : null} - {box ? box.amount : null}
+            </h2>
+            <ItemsContainer/>
+        </div>
+        
     )
 }
 
