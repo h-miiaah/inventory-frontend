@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import {fetchBoxes} from '../actions/fetchBoxes';
 import Boxes from '../components/Boxes';
 import Box from '../components/Box';
@@ -15,9 +15,11 @@ class BoxesContainer extends React.Component {
     render() {
         return(
             <div>
+                <Switch>
                 <Route path='/boxes/new' component={BoxInput}/>
                 <Route path='/boxes/:id' render={(routerProps) => <Box {...routerProps} boxes={this.props.boxes}/> } />
                 <Route exact path='/boxes' render={(routerProps) => <Boxes {...routerProps} boxes={this.props.boxes}/> } />
+                </Switch>
             </div>
         )
     }

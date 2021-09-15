@@ -10,7 +10,7 @@ const Box = (props) => {
 
     return (
         <li>
-            {box ? null : <Redirect to='/boxes'/>}
+            {/* {box ? null : <Redirect to='/boxes'/>} */}
             {box ? box.name : null} - {box ? box.amount : null}
         </li>
     )
