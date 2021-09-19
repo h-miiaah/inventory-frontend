@@ -22,7 +22,7 @@ class ItemsContainer extends React.Component {
     render() {
         return(
             <div>
-                <ItemInput/>
+                <ItemInput box={this.props.box}/>
                 <Items items={this.props.box && this.props.box.items}/>
             </div>
         )

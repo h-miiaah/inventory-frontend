@@ -1,10 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { addItem } from '../actions/addItem';
 
 class ItemInput extends React.Component {
 
     state = {
-       kind: '',
+       kind: 'add',
        description: '',
        style: '',
        color: '',
@@ -19,10 +20,24 @@ class ItemInput extends React.Component {
         })
     }
 
+    handleSubmit = (event) => {
+        event.preventDefault()
+        this.props.addItem(this.state, this.props.box.id)
+        this.setState({
+            kind: 'add',
+            description: '',
+            style: '',
+            color: '',
+            size: '',
+            quantity: '',
+            image_url: ''
+        })
+    } 
+
     render(){
         return(
             <div>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <label>Add or Remove Item </label>
                     <select name="kind" value={this.state.kind} onChange={this.handleChange}>
                         <option>add</option>
@@ -72,4 +87,4 @@ class ItemInput extends React.Component {
     }
 }
 
-export default connect(null) (ItemInput)
+export default connect(null, {addItem}) (ItemInput)
