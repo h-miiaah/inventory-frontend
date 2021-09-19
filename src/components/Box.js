@@ -7,8 +7,8 @@ import ItemsContainer from '../containers/ItemsContainer'
 const Box = (props) => {
     // console.log(props)
 
-    // let box = props.boxes[props.match.params.id - 1]
-    let box = props.boxes.filter(box => box.id == props.match.params.id)[0]
+    let box = props.boxes[props.match.params.id - 1]
+    // let box = props.boxes.filter(box => box.id == props.match.params.id)[0] // searches the box by its index in the box array.
     console.log(box)
 
     return (
