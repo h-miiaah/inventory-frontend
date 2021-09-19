@@ -61,6 +61,10 @@ class ItemInput extends React.Component {
 
                     <br></br>
 
+                    <input type="submit"></input>
+
+                    <br></br>
+
 
                 </form>
             </div>
