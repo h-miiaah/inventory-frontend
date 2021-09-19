@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {connect} from 'react-redux';
 
 class ItemInput extends React.Component {
 
@@ -12,4 +12,4 @@ class ItemInput extends React.Component {
     }
 }
 
-export default ItemInput
+export default connect(null) (ItemInput)
