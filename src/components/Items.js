@@ -1,12 +1,13 @@
 import React from 'react'
-
+import {connect} from 'react-redux'
+import {deleteItem} from '../actions/deleteItem'
 
 const Items = (props) => {
     
     console.log(props.items)
 
-    const handleDelete = () => {
-        
+    const handleDelete = (item) => {
+        props.deleteItem(item.id, item.box_id)
     }
 
     return (
@@ -24,7 +25,7 @@ const Items = (props) => {
                         <br></br>
                         Quantity: {item.quantity}
                         <br></br>
-                        <button onClick={handleDelete}>Delete</button>
+                        <button onClick={() => handleDelete(item)}>Delete</button>
                     </li>
                 </ul>
                 )}
@@ -33,4 +34,4 @@ const Items = (props) => {
     )
 }
 
-export default Items
+export default connect(null, {deleteItem})(Items)

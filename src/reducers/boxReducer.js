@@ -15,6 +15,15 @@ export default function boxReducer(state ={boxes: []}, action) {
                 }
             })
             return {...state, boxes: boxes}
+        case 'DELETE_ITEM':
+            let boxesTwo = state.boxes.map(box => {
+                if (box.id === action.payload.id) {
+                    return action.payload
+                } else {
+                    return box
+                }
+            })
+            return {...state, boxes: boxesTwo}
         default:
             return state
     }
