@@ -5,6 +5,10 @@ const Items = (props) => {
     
     console.log(props.items)
 
+    const handleDelete = () => {
+        
+    }
+
     return (
         <div>
             {props.items && props.items.map(item => 
@@ -19,6 +23,8 @@ const Items = (props) => {
                         Size: {item.size}
                         <br></br>
                         Quantity: {item.quantity}
+                        <br></br>
+                        <button onClick={handleDelete}>Delete</button>
                     </li>
                 </ul>
                 )}

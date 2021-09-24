@@ -1,7 +1,7 @@
 export const addItem = (item, boxId) => {
 
 return (dispatch) => {
-    fetch(`http://localhost:3000/api/v1/boxes/${boxId}/items`, {
+    fetch(`http://localhost:3001/api/v1/boxes/${boxId}/items`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
