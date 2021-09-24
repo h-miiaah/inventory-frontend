@@ -1,8 +1,10 @@
 // Show page for a box.
 import React from 'react'
 import {Redirect} from 'react-router-dom'
+import EditBox from './BoxEdit'
 
 import ItemsContainer from '../containers/ItemsContainer'
+import BoxEdit from './BoxEdit'
 
 const Box = (props) => {
     // console.log(props)
@@ -17,6 +19,8 @@ const Box = (props) => {
                 {box ? box.name : null} - {box ? box.amount : null}
             </h2>
             <ItemsContainer box={box}/>
+            <br></br>
+            <BoxEdit box={box}/>
         </div>
         
     )
