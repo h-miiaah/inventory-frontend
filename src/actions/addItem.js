@@ -9,8 +9,13 @@ return (dispatch) => {
         body: JSON.stringify(item)
     })
     .then(response => response.json())
-    .then(box => dispatch({type: 'ADD_ITEM', payload: box}))
-}
-
-
+    .then(box => {
+        if (box.error) {
+            alert(box.error)
+        } else {
+            dispatch({type: 'ADD_ITEM', payload: box})
+        }       
+      }
+    )
+  }
 }
