@@ -6,9 +6,11 @@ const Boxes = (props) => {
     return(
         <div>
             {props.boxes.map(box => 
-            <li key={box.id}>
-                <Link to={`/boxes/${box.id}`}>{box.name}</Link>
-            </li>)}
+            <ul>
+                <li key={box.id}>
+                    <Link to={`/boxes/${box.id}`}>{box.name}</Link>
+                </li>
+            </ul>)}
         </div>
     )
 }
