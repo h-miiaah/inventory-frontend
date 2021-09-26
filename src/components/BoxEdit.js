@@ -23,6 +23,7 @@ class BoxEdit extends React.Component {
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
+                    <h2>Edit Box</h2>
                     <label>Box Name </label>
                    <input type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleChange}></input>
                    <br></br>
