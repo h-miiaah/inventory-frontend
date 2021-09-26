@@ -4,7 +4,7 @@ import {deleteItem} from '../actions/deleteItem'
 
 const Items = (props) => {
     
-    console.log(props.items)
+    // console.log(props.items)
 
     const handleDelete = (item) => {
         props.deleteItem(item.id, item.box_id)
