@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 const NavigationBar = (props) => {
 
     return (
-        <div>
+        <div class="navbar">
             <Link to='/boxes' style={{paddingRight: '12px'}}> Home </Link>
             <Link to='/boxes' style={{paddingRight: '12px'}}> Boxes </Link>
             <Link to='/boxes/new'style={{paddingRight: '12px'}}> Add Box </Link>

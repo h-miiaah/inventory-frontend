@@ -14,7 +14,7 @@ const Items = (props) => {
         <div>
             {props.items && props.items.map(item => 
                 <ul>
-                    <li key = {item.id}>
+                    <li key = {item.id} class="listitems">
                         Description: {item.description}
                         <br></br>
                         Style: {item.style}

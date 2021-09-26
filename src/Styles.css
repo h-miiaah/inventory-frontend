@@ -1,0 +1,39 @@
+body {
+  background-color: #e9f2f5;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div ul li.listitems {
+  border-radius: 10px;
+  background: #d5ecf5;
+  width: auto;
+  height: auto;
+}
+
+ul li.boxeslist {
+  border-radius: 10px;
+  background: #d5ecf5;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+div.navbar {
+  overflow: hidden;
+  background-color: rgb(176, 193, 216);
+  border-radius: 3px;
+  height: 20px;
+  font-weight: bold;
+}

@@ -7,7 +7,7 @@ const Boxes = (props) => {
         <div>
             {props.boxes.map(box => 
             <ul>
-                <li key={box.id}>
+                <li key={box.id} class="boxeslist">
                     <Link to={`/boxes/${box.id}`}>{box.name}</Link>
                 </li>
             </ul>)}

@@ -8,6 +8,7 @@ import {BrowserRouter as Router} from 'react-router-dom' // so we can use the ro
 import boxReducer from './reducers/boxReducer'; // import the boxReducer reducer function.
 
 import App from './App';
+import './Styles.css';
 
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // gives us access to the redux dev tools.
