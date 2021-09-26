@@ -22,13 +22,14 @@ class BoxInput extends React.Component {
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
+                    <h2>Add Box</h2>
                     <label>Box Name </label>
                    <input type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleChange}></input>
                    <br></br>
                    <label>Box Amount </label>
                    <input type='text' placeholder='Amount' value={this.state.amount} name="amount" onChange={this.handleChange}></input>
                    <br></br>
-                   <input type="submit"></input>
+                   <input type="submit" value="Add Box"></input>
                 </form>
             </div>
         )
