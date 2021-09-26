@@ -38,6 +38,7 @@ class ItemInput extends React.Component {
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
+                    <h2>Add Or Remove Item To Box</h2>
                     <label>Add or Remove Item </label>
                     <select name="kind" value={this.state.kind} onChange={this.handleChange}>
                         <option>add</option>

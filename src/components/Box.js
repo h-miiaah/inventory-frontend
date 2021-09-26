@@ -15,9 +15,9 @@ const Box = (props) => {
 
     return (
         <div>
-            <h2>
+            <h1>
                 {box ? box.name : null} - {box ? box.amount : null}
-            </h2>
+            </h1>
             <ItemsContainer box={box}/>
             <br></br>
             <BoxEdit box={box}/>
