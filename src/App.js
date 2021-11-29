@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import {connect} from 'react-redux'; // connects a React component to a Redux store.
 // import {fetchBoxes} from './actions/fetchBoxes';
 import BoxesContainer from './containers/BoxesContainer';
 

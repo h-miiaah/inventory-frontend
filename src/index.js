@@ -10,6 +10,8 @@ import boxReducer from './reducers/boxReducer'; // import the boxReducer reducer
 import App from './App';
 import './Styles.css';
 
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // gives us access to the redux dev tools.
 

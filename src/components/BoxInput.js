@@ -10,7 +10,17 @@ class BoxInput extends React.Component {
         this.setState({
             [event.target.name]: event.target.value
         })
+        console.log(this.state.name);
     }
+
+    // incrementCounter = () => {
+    //     this.setState((prevState) => {
+    //         return {
+    //             ...this.state,
+    //             counter: prevState.counter + 1
+    //         }
+    //     })
+    // }
 
     handleSubmit = (event) => {
         event.preventDefault();

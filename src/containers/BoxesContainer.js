@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom'; // Switch returns the first route that matches the path.
 import {fetchBoxes} from '../actions/fetchBoxes';
 import Boxes from '../components/Boxes';
 import Box from '../components/Box';
@@ -9,7 +9,7 @@ import NavigationBar from '../components/NavigationBar';
 
 class BoxesContainer extends React.Component {
 
-    componentDidMount(){
+    componentDidMount(){ // allows you to use the React code when the component is already placed in the DOM.
         this.props.fetchBoxes();
     }
 
@@ -27,7 +27,7 @@ class BoxesContainer extends React.Component {
     }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = state => { //used to select the part of the data from the store that the connected component needs.
     return {
         boxes: state.boxes
     }
