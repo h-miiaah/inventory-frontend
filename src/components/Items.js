@@ -25,6 +25,8 @@ const Items = (props) => {
                         <br></br>
                         Quantity: {item.quantity}
                         <br></br>
+                        <img src={item.image_url} height={250} width={250} />
+                        <br></br>
                         <button onClick={() => handleDelete(item)}>Delete</button>
                     </li>
                 </ul>
