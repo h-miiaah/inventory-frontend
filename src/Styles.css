@@ -19,6 +19,8 @@ div ul li.listitems {
   background: #d5ecf5;
   width: auto;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul li.boxeslist {
