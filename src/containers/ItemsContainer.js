@@ -30,3 +30,9 @@ class ItemsContainer extends React.Component {
 }
 
 export default ItemsContainer
+
+/*
+1. The ItemsContainer component is a React component that renders the ItemInput and Items components.
+2. The ItemInput component is a React component that renders an input box and a button.
+3. The Items component is a React component that renders a list of items.
+*/

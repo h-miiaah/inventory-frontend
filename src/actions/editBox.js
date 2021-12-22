@@ -14,3 +14,9 @@ export const editBox = (data) => {
     }
 
 }
+
+/*
+1. We’re fetching the box we want to edit from the API.
+2. We’re updating the box with the new data.
+3. We’re dispatching the updated box to the store.
+*/

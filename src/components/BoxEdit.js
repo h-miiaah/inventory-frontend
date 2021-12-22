@@ -38,3 +38,11 @@ class BoxEdit extends React.Component {
 }
 
 export default connect(null, {editBox})(BoxEdit);
+
+/*
+1. We’re creating a state object that holds the box name and amount.
+2. We’re creating a handleChange function that updates the state object whenever the user changes the input.
+3. We’re creating a handleSubmit function that sends the updated box to the store.
+4. We’re creating a render function that displays the box name and amount.
+5. We’re exporting the component.
+*/

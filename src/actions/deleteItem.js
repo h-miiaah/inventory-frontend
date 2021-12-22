@@ -9,3 +9,10 @@ export const deleteItem = (itemId, boxId) => {
     }
 
 }
+
+/*
+1. First, we’re fetching the box with the given boxId.
+2. Then, we’re fetching the item with the given itemId.
+3. Then, we’re deleting the item with the given itemId.
+4. Finally, we’re dispatching an action to the store.
+*/

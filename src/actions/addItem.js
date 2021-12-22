@@ -19,3 +19,10 @@ return (dispatch) => {
     )
   }
 }
+
+/*
+1. We’re fetching the box with the ID of the box we’re adding the item to.
+2. We’re creating a new item with the item we’re adding.
+3. We’re sending the new item to the server.
+4. We’re dispatching an action to the store with the new item.
+*/

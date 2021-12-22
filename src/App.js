@@ -30,3 +30,10 @@ class App extends React.Component {
 
 // export default connect(null, {fetchBoxes}) (App);
 export default App;
+
+/*
+1. Importing the React and React-Redux libraries.
+2. Importing the BoxesContainer component.
+3. Creating a React component called App.
+4. Rendering the BoxesContainer component inside the App component.
+*/

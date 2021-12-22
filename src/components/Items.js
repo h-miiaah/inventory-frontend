@@ -35,3 +35,17 @@ const Items = (props) => {
 }
 
 export default connect(null, {deleteItem})(Items)
+
+/*
+1. We’re mapping over the items array and creating a new li element for each item.
+2. We’re setting the key to the item’s id.
+3. We’re setting the class to listitems.
+4. We’re setting the description to the item’s description.
+5. We’re setting the style to the item’s style.
+6. We’re setting the color to the item’s color.
+7. We’re setting the size to the item’s size.
+8. We’re setting the quantity to the item’s quantity.
+9. We’re creating a button that will delete the item.
+10. We’re passing the handleDelete function as a prop to the button.
+11. We’re passing the item as a prop to the handleDelete function.
+*/

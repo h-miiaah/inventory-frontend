@@ -16,7 +16,8 @@ const Box = (props) => {
     return (
         <div>
             <h1>
-                {box ? box.name : null} - {box ? box.amount : null}
+                {/* {box ? box.name : null} - {box ? box.amount : null} */}
+                {box ? box.name : null}
             </h1>
             <ItemsContainer box={box}/>
             <br></br>
@@ -27,3 +28,10 @@ const Box = (props) => {
 }
 
 export default Box
+
+/*
+1. It first checks if the box exists. If it does, it renders the box name and the items in the box.
+2. If the box doesn’t exist, it redirects to the home page.
+3. It then renders the box edit form.
+4. If the box doesn’t exist, it redirects to the home page.
+*/

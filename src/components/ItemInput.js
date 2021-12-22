@@ -89,3 +89,13 @@ class ItemInput extends React.Component {
 }
 
 export default connect(null, {addItem}) (ItemInput)
+
+/*
+1. The state is set up to hold the values of the form fields.
+2. The handleChange function is called whenever a form field is changed.
+3. The handleSubmit function is called when the form is submitted.
+4. The addItem function is called when the form is submitted.
+5. The addItem function is passed the state and the box id.
+6. The state is reset to empty after the form is submitted.
+7. It creates a form that allows the user to add or remove items from the box.
+*/

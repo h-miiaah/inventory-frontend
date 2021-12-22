@@ -14,3 +14,13 @@ const NavigationBar = (props) => {
 }
 
 export default NavigationBar
+
+/*
+1. Importing the React library
+2. Importing the Link component from the react-router-dom library
+3. Creating a div element with the class of navbar
+4. Creating a Link element with the text Home and the href of /boxes
+5. Creating a Link element with the text Boxes and the href of /boxes
+6. Creating a Link element with the text Add Box and the href of /boxes/new
+7. Returning the div element
+*/

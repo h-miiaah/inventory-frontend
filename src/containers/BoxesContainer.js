@@ -34,3 +34,13 @@ const mapStateToProps = state => { //used to select the part of the data from th
 }
 
 export default connect(mapStateToProps, {fetchBoxes})(BoxesContainer);
+
+/*
+1. The componentDidMount() method is called when the component is already placed in the DOM.
+2. The fetchBoxes() method is called when the component is already placed in the DOM.
+3. The render() method returns the JSX code that will be rendered to the DOM.
+4. The Switch component is used to return the first route that matches the path.
+5. The Route component is used to render the BoxInput component when the path is /boxes/new.
+6. The Route component is used to render the Box component when the path is /boxes/:id.
+7. The Route component is used to render the Boxes component when the path is /boxes.
+*/

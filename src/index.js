@@ -26,3 +26,18 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
+/*
+1. Import the React library.
+2. Import the ReactDOM library.
+3. Import the Redux library.
+4. Import the Redux Thunk library.
+5. Import the React Router library.
+6. Import the Bootstrap CSS library.
+7. Import the CSS file.
+8. Import the box reducer function.
+9. Create the store.
+10. Create the Provider component.
+11. Create the Router component.
+12. Render the App component.
+*/
