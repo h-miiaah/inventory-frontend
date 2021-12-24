@@ -37,3 +37,13 @@ export default function boxReducer(state ={boxes: []}, action) {
             return state
     }
 }
+
+/*
+
+- The boxReducer function is called with the state and action.
+- The switch statement checks the action.type and returns the appropriate state.
+- The default case returns the state.
+- The action.payload is passed to the appropriate case.
+- The return statement returns the new state.
+
+*/
